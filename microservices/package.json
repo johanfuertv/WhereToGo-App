@@ -1,0 +1,26 @@
+{
+  "name": "wheretogo-microservices",
+  "version": "1.0.0",
+  "description": "Microservicios para la aplicación WhereToGo",
+  "main": "start-services.js",
+  "scripts": {
+    "start": "node start-services.js",
+    "install:all": "npm run install:favorites && npm run install:reviews && npm run install:ratings && npm run install:auth && npm run install:notifications",
+    "install:favorites": "cd favorites-service && npm install",
+    "install:reviews": "cd reviews-service && npm install",
+    "install:ratings": "cd ratings-service && npm install",
+    "install:auth": "cd auth-service && npm install",
+    "install:notifications": "cd notifications-service && npm install",
+    "dev:favorites": "cd favorites-service && npm run dev",
+    "dev:reviews": "cd reviews-service && npm run dev",
+    "dev:ratings": "cd ratings-service && npm run dev",
+    "dev:auth": "cd auth-service && npm run dev",
+    "dev:notifications": "cd notifications-service && npm run dev"
+  },
+  "keywords": ["microservices", "travel", "favorites", "reviews", "ratings", "auth", "notifications"],
+  "author": "WhereToGo Team",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

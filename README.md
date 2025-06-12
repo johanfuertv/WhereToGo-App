@@ -1,5 +1,12 @@
+Se subio el nuevo branch con la documentacion explicando como instalarlo en tu dispositivo local, igualmente se deja la explicacion aqui en el README:
+
+#Descargar las dependencias
 npm install --save-dev typescript @types/react @types/node --legacy-peer-deps
 
+#Correr la Aplicacion
+npm run dev
+
+#Activar Microservicios e instalar sus dependencias, y correr los microservicios con Node Server.js
 cd microservices/favorites-service
 npm install
 Node server.js

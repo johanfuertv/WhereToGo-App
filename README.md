@@ -1,0 +1,30 @@
+npm install --save-dev typescript @types/react @types/node --legacy-peer-deps
+
+cd microservices/favorites-service
+npm install
+Node server.js
+
+cd microservices/reviews-service
+npm install
+node server.js
+
+http://localhost:3000/perfil/favoritos
+http://localhost:3001/api/health
+http://localhost:3002/api/health
+http://localhost:3001/api/favorites
+http://localhost:3004/api/health auth service
+POST a /api/favorites (puedes probarlo con Postman o cURL)
+
+cd microservices/ratings-service
+npm install
+node server.js
+
+ GET  /api/health - Estado del servicio
+  GET  /api/ratings/:placeId/:placeType - Calificaciones de un lugar
+  GET  /api/ratings/:placeId/:placeType/average - Promedio de calificaciones
+  POST /api/ratings - Añadir/actualizar calificación
+  GET  /api/ratings/user/:userId/:placeId/:placeType - Calificación de usuario
+  GET  /api/ratings/stats - Estadísticas generales
+
+cd microservices/notifications-service
+cd microservices/auth-service
